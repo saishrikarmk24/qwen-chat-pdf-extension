@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Qwen Chat to PDF Downloader",
+  "version": "1.0.0",
+  "description": "Download your full Qwen AI conversation from chat.qwen.ai as a professionally formatted PDF.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Download Qwen Chat as PDF"
+  },
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "host_permissions": ["https://chat.qwen.ai/*", "https://cdn.jsdelivr.net/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://chat.qwen.ai/*"],
+      "js": ["content.js"],
+      "css": ["overlay.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "libs/html2pdf.bundle.min.js",
+        "libs/jspdf.umd.min.js",
+        "libs/katex.min.css",
+        "libs/katex.min.js",
+        "libs/html2canvas.min.js",
+        "overlay.css",
+        "icons/logo.png",
+        "icons/icon128.png"
+      ],
+      "matches": ["https://chat.qwen.ai/*"]
+    }
+  ]
+}

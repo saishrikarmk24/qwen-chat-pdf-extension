@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qwen Chat to PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-layer" aria-hidden="true">
+      <span class="mesh mesh-a"></span>
+      <span class="mesh mesh-b"></span>
+      <span class="mesh mesh-c"></span>
+      <span class="grain"></span>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>PDF Export</span><span class="dot">·</span>
+        <span>Landscape</span><span class="dot">·</span>
+        <span>Sharp Math</span><span class="dot">·</span>
+        <span>Tables</span><span class="dot">·</span>
+        <span>Qwen Chat</span><span class="dot">·</span>
+        <span>PDF Export</span><span class="dot">·</span>
+        <span>Landscape</span><span class="dot">·</span>
+        <span>Sharp Math</span><span class="dot">·</span>
+        <span>Tables</span><span class="dot">·</span>
+        <span>Qwen Chat</span><span class="dot">·</span>
+      </div>
+    </div>
+
+    <main class="shell" role="main">
+      <header class="topbar">
+        <div class="topbar-brand">
+          <img src="icons/logo.png" alt="" class="topbar-logo" width="36" height="36" />
+          <span class="wordmark">qwen<span class="wordmark-accent">pdf</span></span>
+        </div>
+        <span class="badge">v1</span>
+      </header>
+
+      <section class="hero">
+        <p class="kicker">Export your conversation</p>
+        <h1 class="headline">
+          Chats that look<br />
+          <em class="headline-em">professionally</em> printed
+        </h1>
+        <p class="lede">
+          One click to a clean landscape PDF — math, tables, and steps preserved.
+        </p>
+      </section>
+
+      <button type="button" id="downloadBtn" class="cta" aria-live="polite">
+        <span class="cta-glow" aria-hidden="true"></span>
+        <span class="cta-inner">
+          <span class="fluid-loader" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="btn-text">Download Chat as PDF</span>
+          <span class="cta-arrow" aria-hidden="true">→</span>
+        </span>
+      </button>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+
+      <footer class="foot">
+        <span class="foot-line" aria-hidden="true"></span>
+        <p>
+          Open a chat at <a href="https://chat.qwen.ai" target="_blank" rel="noopener noreferrer">chat.qwen.ai</a>, then download.
+        </p>
+      </footer>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
