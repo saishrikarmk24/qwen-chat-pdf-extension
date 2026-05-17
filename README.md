@@ -1,4 +1,4 @@
-# Qwen Chat to PDF Downloader
+<img width="813" height="752" alt="image" src="https://github.com/user-attachments/assets/d97ba905-ab04-4769-a345-4bdfd242189b" /># Qwen Chat to PDF Downloader
 
 Chrome extension (Manifest V3) that exports your full [chat.qwen.ai](https://chat.qwen.ai) conversation as a professionally formatted A4 PDF.
 
@@ -10,6 +10,13 @@ Chrome extension (Manifest V3) that exports your full [chat.qwen.ai](https://cha
 - A4 multi-page PDF with cover page, role labels, and page numbers (jsPDF text layout — reliable on all pages)
 - Filename from conversation title + export date
 - Clear success and error feedback in the popup
+<img width="1911" height="843" alt="image" src="https://github.com/user-attachments/assets/21f5ed27-3f43-48d6-8165-23c88a5077b8" />
+<img width="1152" height="538" alt="image" src="https://github.com/user-attachments/assets/c7ead8af-4070-43f4-bef4-04864e16abca" />
+<img width="1918" height="840" alt="image" src="https://github.com/user-attachments/assets/39e55f47-68e3-477a-ae42-ce4c07a7c41f" />
+<img width="1181" height="658" alt="image" src="https://github.com/user-attachments/assets/ece12799-ac01-4b81-ba42-e2dec6fefc81" />
+<img width="813" height="752" alt="image" src="https://github.com/user-attachments/assets/7a7dad64-8d72-4557-8bd7-107f613cacf8" />
+
+
 
 ## Project structure
 
