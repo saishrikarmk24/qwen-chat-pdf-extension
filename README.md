@@ -1,4 +1,4 @@
-<img width="813" height="752" alt="image" src="https://github.com/user-attachments/assets/d97ba905-ab04-4769-a345-4bdfd242189b" /># Qwen Chat to PDF Downloader
+# Qwen Chat to PDF Downloader
 
 Chrome extension (Manifest V3) that exports your full [chat.qwen.ai](https://chat.qwen.ai) conversation as a professionally formatted A4 PDF.
 
